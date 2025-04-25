@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Resolver Cubo Rubik 2x2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+    h1 {
+      color: #d62828;
+    }
+    h2 {
+      color: #0077b6;
+    }
+    ol {
+      margin-top: 10px;
+    }
+    .algoritmo {
+      background-color: #fff;
+      padding: 10px;
+      border-left: 4px solid #0077b6;
+      margin: 10px 0;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Cómo resolver un Cubo Rubik 2x2 (2x3)</h1>
+
+  <p>Este método es ideal para principiantes. Usaremos un algoritmo básico y fácil de memorizar. ¡Vamos paso a paso!</p>
+
+  <h2>Paso 1: Armar una cara (una cara blanca, por ejemplo)</h2>
+  <ol>
+    <li>Elegí una cara para comenzar (recomendado: la blanca).</li>
+    <li>Ubicá las piezas blancas en esa cara, asegurándote de que coincidan también con los colores laterales.</li>
+  </ol>
+
+  <h2>Paso 2: Armar la primera capa</h2>
+  <p>Verificá que las piezas de los costados coincidan con el color del centro lateral.</p>
+
+  <h2>Paso 3: Orientar la cara opuesta (amarilla)</h2>
+  <p>Usá el siguiente algoritmo para que la cara amarilla esté completa (sin importar si las esquinas están bien ubicadas):</p>
+  <div class="algoritmo">
+    R U R' U R U2 R'
+  </div>
+  <p>Repetí este algoritmo con la misma pieza amarilla al frente hasta que todas las piezas amarillas estén arriba.</p>
+
+  <h2>Paso 4: Permutar las esquinas</h2>
+  <p>Ahora necesitamos mover las esquinas a su lugar correcto sin rotarlas. Usamos este algoritmo:</p>
+  <div class="algoritmo">
+    U R U' L' U R' U' L
+  </div>
+  <p>Repetilo hasta que todas las esquinas estén en el lugar correcto, aunque estén mal orientadas.</p>
+
+  <h2>Paso 5: Orientar las esquinas finales</h2>
+  <p>Con la pieza desorientada en la parte frontal derecha, aplicá:</p>
+  <div class="algoritmo">
+    R' D' R D
+  </div>
+  <p>Repetí este algoritmo varias veces (manteniendo el cubo en la misma posición) hasta que la pieza se oriente correctamente. Luego rotá la cara superior y hacé lo mismo con la siguiente esquina desorientada.</p>
+
+  <h2>¡Listo!</h2>
+  <p>Tu cubo Rubik 2x2 debería estar resuelto. ¡Felicidades!</p>
+
+</body>
+</html>
